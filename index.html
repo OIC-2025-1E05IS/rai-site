@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ライ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- メニュー -->
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="current">TOP</a></li>
+        <li><a href="profile.html">自己紹介</a></li>
+        <li><a href="gallery.html">フォトギャラリー</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- メインビジュアル -->
+  <div class="hero">
+    <div class="inner">
+      <div class="hero-text">
+        <h1 class="hero-title">This<br>is<br>Rai</h1>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 自己紹介 -->
+    <section class="section">
+      <div class="inner">
+        <h2 class="line-title">自己紹介</h2>
+        <dl class="profile-list">
+          <div><dt>名前</dt><dd>ライ</dd></div>
+          <div><dt>年齢</dt><dd>3歳</dd></div>
+          <div><dt>性別</dt><dd>オス</dd></div>
+          <div><dt>犬種</dt><dd>トイプードル</dd></div>
+          <div><dt>好きなこと</dt><dd>日向ぼっこ、ボールキャッチ</dd></div>
+        </dl>
+      </div>
+      <a href="profile.html" class="btn btn-center">自己紹介の詳細を見る</a>
+    </section>
+    
+   <!-- フォトギャラリー（横スクロール） -->
+    <section class="section">
+      <div class="inner">
+        <h2 class="line-title-color">Gallery</h2>
+        <p class="scroll-hint">横にスクロールできます →</p>
+        <div class="scroll">
+          <figure class="scroll-item">
+            <img src="images/stand.jpg" alt="後ろ足で立つライ">
+            <figcaption>おねだりポーズ</figcaption>
+          </figure>
+          <figure class="scroll-item">
+            <img src="images/sleep.jpg" alt="ベッドで眠るライ">
+            <figcaption>おやすみ</figcaption>
+          </figure>
+          <figure class="scroll-item">
+            <img src="images/drive.jpg" alt="車の中のライ">
+            <figcaption>ドライブ中</figcaption>
+          </figure>
+          <figure class="scroll-item">
+            <img src="images/birthday.jpg" alt="誕生日ケーキに顔を近づけるライ">
+            <figcaption>2歳の誕生日ケーキ</figcaption>
+          </figure>
+        </div>
+        <a href="gallery.html" class="btn btn-center">もっと見る</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <small>&copy; RAI</small>
+  </footer>
+
+</body>
+</html>

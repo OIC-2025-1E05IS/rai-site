@@ -1,0 +1,314 @@
+
+body {
+  margin: 0;
+  background-color: #f7f8f7;
+  color: #444;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== ヘッダー（メニュー） ===== */
+.header {
+  background-color: #fff;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 14px 0;
+  list-style: none;
+}
+
+.nav a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a.current {
+  color: #7fae9a;
+}
+
+.hero {
+  height: 460px;
+  background:
+    linear-gradient(to right, #f9e3e3 42%, rgba(249, 227, 227, 0) 72%),
+    url("../images/stand.jpg") right 20% / 60% auto no-repeat,
+    #f9e3e3;
+}
+
+.hero .inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-title {
+  margin: 12px 0 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+}
+
+
+
+
+
+
+
+
+
+/* ===== セクション共通 ===== */
+.section {
+  padding: 50px 0;
+}
+
+.line-title {
+  margin: 0 0 24px;
+  padding: 10px 6px;
+  border-top: 3px double #a9cbbd;
+  border-bottom: 3px double #a9cbbd;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.line-title-color {
+  margin: 0 0 24px;
+  padding: 10px 6px;
+  background-color: #a9cbbd;
+  font-size: 20px;
+  font-weight: 500;
+color: white;
+}
+
+
+
+
+
+/* ===== 自己紹介の表 ===== */
+.profile-list {
+  margin: 0;
+}
+
+.profile-list div {
+  display: flex;
+  padding: 12px 6px;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 14px;
+}
+
+.profile-list dt {
+  width: 200px;
+  color: #7fae9a;
+}
+
+.profile-list dd {
+  margin: 0;
+}
+
+.pickup {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.pickup-photo {
+  width: 45%;
+}
+
+.pickup-photo img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.pickup-text {
+  flex: 1;
+}
+
+
+.pickup-text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ミントのボタン */
+.btn {
+  display: block;
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 30px;
+  background-color: #a9cbbd;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #7fae9a;
+}
+
+.btn-center {
+  width: 260px;
+  margin: 32px auto 0;
+}
+
+
+
+/* ===== 横スクロールのギャラリー ===== */
+.scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;           
+  scroll-snap-type: x mandatory; 
+  padding-bottom: 16px;
+}
+
+.scroll-item {
+  flex-shrink: 0;            
+  width: 260px;
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.scroll-item img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.scroll-item figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.scroll-hint {
+  margin: 0 0 12px;
+  color: #7fae9a;
+  font-size: 13px;
+  text-align: right;
+}
+
+.scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #a9cbbd;
+  border-radius: 3px;
+}
+
+
+/* ===== フッター ===== */
+.footer {
+  padding: 20px 0;
+  background-color: #dcebe4;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ===== スマホ（画面幅768px以下） ===== */
+@media (max-width: 768px) {
+  .nav ul {
+    gap: 20px;
+  }
+
+  .hero {
+    height: 360px;
+    background:
+      linear-gradient(to right, #f9e3e3 30%, rgba(249, 227, 227, 0) 80%),
+      url("../images/stand.jpg") right 20% / cover no-repeat;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-small {
+    height: 260px;
+  }
+
+  .hero-small .hero-title {
+    font-size: 48px;
+  }
+
+  .pickup,
+  .likes {
+    flex-direction: column;
+  }
+
+  .pickup-photo {
+    width: 100%;
+  }
+
+  .profile-list dt {
+    width: 110px;
+  }
+
+
+  /* ===== 好きなこと ===== */
+.likes {
+  display: flex;
+  gap: 24px;
+}
+
+.like {
+  flex: 1;
+  padding: 24px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.like-icon {
+  margin: 0;
+  font-size: 36px;
+}
+
+.like h3 {
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.like p {
+  margin: 0;
+  font-size: 14px;
+}
+  
+
+  .scroll-large .scroll-item {
+    width: 360px;
+  }
+
+  .scroll-large .scroll-item img {
+    height: 400px;
+  
+  }
+}
