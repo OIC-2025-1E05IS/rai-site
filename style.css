@@ -51,7 +51,7 @@ a {
   height: 460px;
   background:
     linear-gradient(to right, #f9e3e3 42%, rgba(249, 227, 227, 0) 72%),
-    url("../images/stand.jpg") right 20% / 60% auto no-repeat,
+    url("stand.jpg") right 20% / 60% auto no-repeat,
     #f9e3e3;
 }
 
